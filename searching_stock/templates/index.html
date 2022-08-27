@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>MTの株価検索</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <h1>株価検索</h1>
+
+        <form method="post" action="{{ url_for('register') }}">
+            <p>株銘柄：<br>
+            <input type="text" name="stock_name"></p>
+            
+            <br>
+            <input type="submit" value="検索">
+        </form>
+        
+        <p><img src={{ image_path }} alt="株価チャート"></p>
+                
+    </body>
+</html>
